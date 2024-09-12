@@ -1,4 +1,5 @@
 import Header from "../Components/Header.jsx"
+import Footer from "../Components/Footer.jsx"
 
 
 function Home(){
@@ -6,6 +7,8 @@ function Home(){
         <>
             <Header/>
             <h2>Home Page</h2>
+            <Footer/>
+
         </>
     )
 }

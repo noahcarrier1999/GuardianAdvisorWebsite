@@ -1,0 +1,184 @@
+.form-container{
+    background-color: #F2EFEB;
+    border-radius: 10px;
+    margin:70px auto;
+    min-width: 650px;
+    max-width: 700px;
+    width:70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     box-shadow: 4px 5px 13px -3px rgba(0,0,0,0.58);
+    -webkit-box-shadow: 4px 5px 13px -3px rgba(0,0,0,0.58);
+    -moz-box-shadow: 4px 5px 13px -3px rgba(0,0,0,0.58);
+  }
+  
+  .form-header{
+    background-color: #584910;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color:#F2EFEB;
+    padding:10px;
+    text-align: center;
+  }
+  
+  .form-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .form{
+    margin: 20px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form-group{
+    display: flex;
+    justify-content: space-between;
+    gap:30px
+    
+  }
+  
+  .form-feild{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+  
+  
+  input,
+  select {
+    margin-bottom: 15px;
+    height: 30px;
+    width: 250px;
+    text-indent: 10px;
+    border: none;
+    border-radius: 5px;
+    font-family: "Poppins";
+  }
+  
+  input,select,textarea{
+    background-color: #fff;
+    color:#333
+  }
+  
+  textarea{
+    border: none;
+    resize: none;
+    max-width: 530px;
+    min-width: 530px;
+    height: 120px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-family: "Poppins";
+  }
+  
+  button{
+    background-color: #584910;
+    color:#F2EFEB;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    display: block;
+    margin: 20px auto 0 auto;
+    box-shadow: 4px 5px 13px -3px rgba(0,0,0,0.58);
+    -webkit-box-shadow: 4px 5px 13px -3px rgba(0,0,0,0.58);
+    -moz-box-shadow: 4px 5px 13px -3px rgba(0,0,0,0.58);
+  }
+  
+  button:hover{
+    background-color: #bc9c22;
+  }
+  
+  label{
+    font-family: "Poppins";
+    color:#333
+  }
+  
+  
+  
+  
+  
+  
+  
+  @media only screen and (max-width: 768px) {
+    /* Styles for tablets and phones (max-width of 768px) */
+    .form-container {
+     /* Reduce the width to fit smaller screens */
+      margin: 20px auto;
+      min-width: auto; /* Let it shrink more */
+      max-width: none;
+    }
+  
+    .form-group {
+      flex-direction: column; /* Stack form fields vertically */
+      gap: 10px; /* Adjust the gap between fields */
+    }
+  
+    .form-feild {
+      width: 100%; /* Make input fields take the full width on mobile */
+    }
+  
+    input, select, textarea {
+      width: 100%; /* Make input fields take full width */
+      height: 40px; /* Slightly increase the height for touch targets */
+      font-size: 1rem; /* Increase font size for better readability */
+    }
+  
+    textarea {
+      min-width: 100%; /* Adjust the width of text area */
+      max-width: 100%;
+    }
+  
+    button {
+      width: 100%; /* Make the submit button take full width */
+      padding: 12px;
+      font-size: 1rem;
+    }
+  
+    .form-header h2 {
+      font-size: 1.5rem; /* Adjust the heading size for smaller screens */
+    }
+  
+    .footer {
+      padding: 10px; /* Adjust footer padding for smaller screens */
+      height: 50px; /* Adjust footer height */
+    }
+  }
+  
+  @media (prefers-color-scheme: light) {
+    input, select, textarea {
+      background-color: #fff; /* White background */
+      color: #333; /* Dark text */
+      border: 1px solid #ccc; /* Light border */
+    }
+  }
+  
+  /* Styles for dark mode */
+  @media (prefers-color-scheme: dark) {
+    input, select, textarea {
+      background-color: #fff !important; /* Force white background */
+      color: #333 !important; /* Force dark text */
+      border: 1px solid #ccc !important; /* Light border */
+    }
+  
+    button {
+      background-color: #584910; /* Ensure button color stays the same */
+      color: #F2EFEB;
+    }
+  
+    button:hover {
+      background-color: #bc9c22;
+    }
+  }

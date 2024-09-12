@@ -1,4 +1,5 @@
 import logo from "../assets/Small Horizontal Logo No Background.png"
+import "../styles/Header.css"
 
 function Header(){
     return(
